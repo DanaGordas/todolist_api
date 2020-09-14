@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap'); 
+ 
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	background: #D4D3D5;
+}
+
+/*Header Styles*/
+
+header {
+	text-align: center;
+}
+header h1 {
+	font-size: 64px;
+	font-weight: 300;
+	margin: 80px 0 25px;
+	color: #7C2A47;
+}
+header h1 span {
+	font-weight: 700;
+}
+header h2 {
+	color: #7C2A47;
+	font-weight:400;
+	opacity: 0.6;
+}
+
+@media (max-width: 600px){
+	header h1 {
+		font-size: 48px;
+	}
+
+	header h2 {
+		font-size: 20px;
+	}
+}
+
+/*Form Styles*/
+
+.form {
+	width: 800px;
+	margin: 50px auto 20px;
+}
+
+#todoInput {
+	width: 100%;
+	height: 60px;
+	background: none;
+	border: none;
+	border-bottom: 1px solid #7C2A47;
+	outline: none;
+	font: 300 28px 'Ubuntu', sans-serif;
+	padding: 20px;
+	color: #7C2A47;
+}
+
+::placeholder {
+	color: #7C2A47;
+	opacity: 0.3;
+}
+
+
+@media (max-width: 900px) {
+	.form {
+		width: 500px;
+	}
+}
+
+@media (max-width: 768px) {
+	.form {
+		width: 400px;
+	}
+}
+
+@media (max-width: 600px){
+	.form {
+		width: 300px;
+	}
+
+	#todoInput {
+		font-size: 20px;
+	}
+}
+
+
+
+/*List Styles*/
+
+.list {
+	width: 800px;
+	margin: 0 auto;
+}
+.task {
+	width: 100%;
+	height: 60px;
+	line-height: 60px;
+	font-size: 20px;
+	padding: 0 20px;
+	color: #7C2A47;
+	transition: all .3s ease;
+}
+.task:hover {
+	background: rgba(0, 0, 0, .02);
+	cursor: pointer;
+}
+
+.task:hover span{
+	opacity: 1;
+}
+
+.done {
+	text-decoration: line-through;
+	color: #bdc3c7;
+}
+
+li span {
+  float: right;
+  color: #c0392b;
+  transition: all 0.3s;
+  opacity: 0;
+}
+
+li span:hover {
+  color: #e74c3c
+}
+
+@media (max-width: 900px) {
+	.list {
+		width: 500px;
+	}
+}
+
+@media (max-width: 768px) {
+	.list {
+		width: 400px;
+	}
+}
+
+@media (max-width: 600px){
+	.list{
+		width: 300px;
+	}
+	.task {
+		font-size: 18px;
+	}
+}
+
+
+
+
+
+
