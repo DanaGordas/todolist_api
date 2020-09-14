@@ -19,5 +19,4 @@ app.get('/', function(req, res){
 
 app.use('/api/todos', todoRoutes);
 
-const port = process.env.PORT || 3000;
 app.listen(port);
